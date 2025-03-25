@@ -310,6 +310,36 @@ a {
     padding: 20px;
 }
 
+/****** Footer ***********/
+footer {
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.informations { 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.informations .info-box {
+    width: 446px;
+    padding: 20px;
+}
+
+.info-box h3 {
+    margin-top: 0;;
+}
+
+.info-box ul {
+    list-style-type: none;
+    align-items: center;
+    padding-left: 0;
+}
+
+.info-box li {
+    margin-bottom: 10px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

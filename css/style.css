@@ -1,6 +1,4 @@
 /****** General ***********/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     font-family: 'Raleway', sans-serif, Arial;
 }
@@ -59,6 +57,79 @@ nav img {
     border-top: #0065FC 2px solid;
     font-size: 16px;
 }
+
+/****** Recherche et Infos ***********/
+
+.form {
+	display: flex;
+	justify-content: start;
+    margin: 25px 0 px 0;
+}
+
+.form i{
+	padding: 8px;
+	background-color: #F2F2F2;
+	border-radius: 15px 0 0 15px;
+}
+
+.form #search-form {
+    display: flex;
+}
+
+#search-town-country{
+	font-weight: 700;
+	padding: 8px;
+	border: 2px solid #F2F2F2;
+}
+
+#search{
+	color: #FFFFFF;
+    padding: 8px;
+	font-weight: bold;
+	background-color: #0065FC;
+    border: 2px solid #0065FC;
+	border-radius: 0 15px 15px 0px;
+}
+
+/****** Filters and Infos ***********/
+
+.filters {
+	display: flex;
+	align-items: center;
+}
+
+.filters_buttons {
+	display: flex;
+    List-style-type: none;
+    gap: 20px;
+}
+
+.filters_buttons .button{
+	display: flex;
+	padding: 5px 15px 5px 15px;
+	border: 2px solid #D9D9D9;
+	border-radius: 25px 25px 25px 25px;
+	gap: 10px;
+}
+
+.filters_buttons .button:hover {
+	background-color: #DEEBFF;
+}
+
+.infos-container {
+	display:flex;
+	align-items: center;
+	gap: 10px;
+    margin-bottom: 20px;
+}
+
+#info-icon {
+	padding: 6px 12px 6px 12px;
+	border: 2px solid #D9D9D9;
+	border-radius: 25px 25px 25px 25px;
+}
+
+/****** Main and Cards ***********/
 
 .main-container {
     width: 100%;

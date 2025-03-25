@@ -285,6 +285,30 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+.activites {
+    padding: 30px;
+}
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.activites-cards .card {
+    padding: 0;
+}
+
+.activites-cards img {
+    width: 297px;
+    height: 439px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.activites-cards .card-txt {
+    padding: 20px;
+}
 
 
 

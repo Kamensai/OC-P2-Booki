@@ -22,10 +22,10 @@
                 <img src="images/logo/Booki.png" alt="logo Booki">
                 <ul class="menu">
                     <li>
-                        <a href="#">Hébergements</a>				
+                        <a href="#accomodations">Hébergements</a>				
                     </li>
                     <li>
-                        <a href="#">Activités</a>	
+                        <a href="#activities">Activités</a>	
                     </li>
                 </ul>
             </nav>
@@ -37,14 +37,14 @@
             
             <div class="form">
 				<i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-                <form method="get" action="" id="search-form">
-                <label for="ville_pays"></label><input type="text" name="ville_pays" placeholder="Marseille, France" id="search-town-country">
+                <form method="get" action="#" id="search-form">
+                <label for="search-town-country"></label><input type="text" name="town_country" placeholder="Marseille, France" id="search-town-country">
                 <input type="submit" id="search" value="Rechercher">
                 </form>
             </div>
             
             <div class="filters">
-				<div><h3>Filtres</3></div>
+				<div><h3>Filtres</h3></div>
                 <ul class="filters_buttons">
                     <li class="button"><div><i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i></div>Économique</li>
                     <li class="button"><div><i class="fa-solid fa-person" style="color: #0065fc;"></i></div>Familial</li>
@@ -60,10 +60,10 @@
         </section>
         
         <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
+            <div class="accomodations-and-popular">
+                <section class="accomodations" id="accomodations">
                     <h2>Hébergements à Marseille</h2>
-                    <div class="hebergements-cards">
+                    <div class="accomodations-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -180,16 +180,16 @@
                         </a>                    
                     </div>
                     <a href="#">
-                        <p>Afficher plus</p>
+                        <p id="show-more">Afficher plus</p>
                     </a>
                 </section>
 		            
-                <section class="populaires">
-                    <div class="populaires-title">
+                <section class="popular">
+                    <div class="popular-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
-                    <div class="populaires-cards">
+                    <div class="popular-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -251,9 +251,9 @@
                 </section>
             </div>
 
-            <section class="activites">
+            <section class="activities" id="activities">
                 <h2>Activités à Marseille</h2>
-                <div class="activites-cards">
+                <div class="activities-cards">
                     <a href="#">
                         <article class="card">
                             <img src="images/activites/reno-laithienne.jpg" alt="Image du Vieux Port">

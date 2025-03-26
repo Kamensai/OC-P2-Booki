@@ -24,7 +24,7 @@ body {
 header {
     width: 100%;
     height: 79px;
-    background-color: var(--main-bg-color);
+    background-color: white;
 }
 
 nav {
@@ -293,13 +293,14 @@ a {
 
 /****** Activités ***********/
 .activities {
-    padding: 30px;
+    width: 100%;
+    padding: 30px 0 30px 0;
 }
 .activities-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .activities-cards .card {
@@ -353,13 +354,12 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .accomodations
--and-popular {
+    .accomodations-and-popular {
+        display: flex;
         flex-direction: column;
     }
 
-    .accomodations
- {
+    .accomodations {
         width: 100%;
     }
 
@@ -384,6 +384,24 @@ footer {
 
     .popular-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    /****** Activities ***********/
+    .activities {
+        margin-bottom: 70px;
+    }
+
+    .activities-cards .card {
+        width: 193px;
+        height: 270px;
+        padding: 0;
+    }
+
+    .activities-cards img {
+        width: 193px;
+        height: 270px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
     }
 }
 

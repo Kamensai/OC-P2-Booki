@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif, Arial;
-    
 }
 
 :root {
@@ -46,6 +45,10 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
 .card img {
     object-fit: cover;
 }
@@ -78,7 +81,6 @@ nav {
 nav img {
     max-width: 61px;
     max-height: 19px;
-    box-sizing: content-box;
 }
 
 .menu {
@@ -174,25 +176,25 @@ nav img {
 	border-radius: 25px 25px 25px 25px;
 }
 
-/******Accomodations And popular ***********/
-.accomodations-and-popular {
+/****** Accommodations And popular ***********/
+.accommodations-and-popular {
     display: flex;
     justify-content: space-between;
 }
 
-.accomodations-and-popular section {
-    background-color: var(--main-bg-color);
+.accommodations-and-popular section {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
 }
 
-/****** Accomodations ***********/
-.accomodations {
+/****** Accommodations ***********/
+.accommodations {
     width: 65%;
+    background-color: var(--main-bg-color);
 }
 
-.accomodations h2 {
+.accommodations h2 {
     margin: 0;
 }
 
@@ -200,29 +202,27 @@ nav img {
     margin-top: 25px;
 }
 
-.accomodations-cards {
+.accommodations-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
 }
 
-.accomodations-cards .card {
+.accommodations-cards .card {
     display: flex;
+    width: 30%;
     flex-direction: column;
-    width: 250px;
-    height: fit-content;
     margin-top: 25px;
 }
 
-.accomodations-cards img {
+.accommodations-cards img {
     width: 100%;
     height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.accomodations-cards .card-content {
+.accommodations-cards .card-content {
     width: 80%;
     padding-left: 15px;
     display: flex;
@@ -230,26 +230,27 @@ nav img {
     box-sizing: border-box;
 }
 
-.accomodations-cards .card-content .card-txt h4, p {
+.accommodations-cards .card-content .card-txt h4, p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.accomodations-cards .card-title {
+.accommodations-cards .card-title {
     margin-bottom: 4px;
 }
 
-.accomodations-cards .card-subtitle {
+.accommodations-cards .card-subtitle {
     margin: 0;
 }
 
-.accomodations-cards .card-rating {
+.accommodations-cards .card-rating {
     margin-bottom: 5px;
 }
 
 /****** popular ***********/
 .popular {
     width: 32%;
+    background-color: var(--main-bg-color);
 }
 
 .popular-title {
@@ -306,17 +307,15 @@ nav img {
 }
 
 .activities-cards .card {
-    width: 297px;
-    height: 450px;
+    width: 22%;
     padding: 0;
     margin-top: 10px;;
 }
 
 .activities-cards img {
     width: 100%;
-    height: 85%;
+    height: 435px;
     border-radius: 20px 20px 0 0;
-    object-fit: cover;
 }
 
 .activities-cards .card-txt h4 {
@@ -360,12 +359,12 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .accomodations-and-popular {
+    .accommodations-and-popular {
         display: flex;
         flex-direction: column;
     }
 
-    .accomodations {
+    .accommodations {
         width: 100%;
     }
 
@@ -397,26 +396,12 @@ footer {
         height: fit-content;
     }
 
-    .activities-cards .card{
-        width: 193px;
-        height: 300px;
-    }
-
     .activities-cards img {
-        width: 100%;
-        height: 75%;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
+        height: 250px;
     }
 
     .activities-cards .card-content {
-        height: 24%; 
-        display: grid;
         align-items: center; 
-    }
-
-    .activities-cards .card-txt h4 {
-        margin: 0;
     }
 }
 
@@ -459,6 +444,8 @@ footer {
         display: flex;
         justify-content:space-around;
         List-style-type: none;
+        padding-right: 0;
+        padding-left: 0;
     }
     
     .menu a:hover {
@@ -498,15 +485,13 @@ footer {
 
     .filters {
         flex-direction: column;
-        align-items: start;
+        align-items: normal;
     }
     
     .filters_buttons {
         display: flex;
-        align-items: start;
         flex-wrap: wrap;
-        justify-content: space-between;
-        List-style-type: none;
+        justify-content: space-around;
         padding-left: 0;
     }
 
@@ -518,58 +503,55 @@ footer {
         align-items: center;
     }
 
-    /****** Accomodations And popular ***********/
-    .accomodations-and-popular {
+    /****** Small Devices accommodations And popular ***********/
+    .accommodations-and-popular {
         display: flex;
         flex-direction: column-reverse;
     }
-    
-    .accomodations-and-popular section {
-        border-radius: 20px;
-        padding: 30px;
-        box-sizing: border-box;
-    }
 
-    /****** Popular ***********/
+
+    /****** Small Devices Popular ***********/
     .popular {
         margin-top: 0;
     }
     .popular-cards {
         display: inline;
     }
-
-    /****** Accomodations ***********/
-    #accomodations {
-        background-color: #FFFFFF;
+     
+    /****** Small Devices accommodations ***********/
+    .accommodations {
+        background-color: white;
     }
 
-    .accomodations-cards {
+    .accommodations-cards {
         flex-direction: column;
         margin-top: 25px;
     }
 
-    .accomodations-cards .card {
-        width: auto;
-        margin-top: 0;
+    .accommodations-cards .card {
+        width: 100%;
     }
     
-    /****** Activities ***********/
+    /****** Small Devices Activities ***********/
     .activities {
         box-sizing: border-box;
         padding: 0 30px 0 30px;
     }
 
     .activities-cards {
-        display: inline;
+        flex-direction: column;
     }
 
     .activities-cards .card {
         width: 100%;
-        height: 200px;
         margin-top: 20px;
     }
+
+    .activities-cards img {
+        height: 130px;
+    }
     
-    /****** Footer ***********/
+    /****** Small Devices Footer ***********/
     .informations {
         flex-direction: column;
         align-items: center;
